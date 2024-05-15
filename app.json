@@ -18,10 +18,30 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.saikrishnatbijil.Call_Noter",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a0b5c096-7f44-45eb-93e4-cc0586d6a8e3"
+      }
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Call Noter to access your camera",
+          "microphonePermission": "Allow Call Noter to access your microphone",
+          "recordAudioAndroid": true
+        }
+      ]
+    ]
   }
 }
