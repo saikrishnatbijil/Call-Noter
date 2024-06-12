@@ -3,3 +3,15 @@
  <toogle visibility> 
 {/*toggleVisibility(index)*/}
  </toogle visibility>
+
+ <camera view variable> 
+const [isCameraView, setIsCameraView] = useState(route.params.isCameraView)
+ </camera view variable>
+
+ <hj> 
+recording ? stopRecording : startRecording
+ </hj>
+
+ <gh> 
+recordingLine.sound.replayAsync()
+ </gh>

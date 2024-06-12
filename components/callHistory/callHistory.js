@@ -16,7 +16,7 @@ const CallHistory = ({ callData, navigation }) => {
 
   // Render item for FlatList
   const renderItem = ({ item, index }) => (
-    <TouchableOpacity style={styles.logContainer} onPress={() =>  navigation.navigate('LogInfo', {item})}>
+    <TouchableOpacity style={styles.logContainer} onPress={() =>  navigation.navigate('LogInfo', {item, navigation})}>
       <View style={styles.cellOne}>
       <View style={styles.nameGroup}>
         <Text style={styles.name}>{item.name == null ? item.phoneNumber : item.name}</Text>

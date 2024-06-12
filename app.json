@@ -22,7 +22,8 @@
       "package": "com.saikrishnatbijil.Call_Noter",
       "permissions": [
         "android.permission.CAMERA",
-        "android.permission.RECORD_AUDIO"
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
       ]
     },
     "web": {
@@ -30,7 +31,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "a0b5c096-7f44-45eb-93e4-cc0586d6a8e3"
+        "projectId": "8beb2911-53da-4384-802b-439c8b58136a"
       }
     },
     "plugins": [
@@ -40,6 +41,12 @@
           "cameraPermission": "Allow Call Noter to access your camera",
           "microphonePermission": "Allow Call Noter to access your microphone",
           "recordAudioAndroid": true
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow Call Noter to access your microphone."
         }
       ]
     ]
